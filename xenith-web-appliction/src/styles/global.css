@@ -1,0 +1,56 @@
+/* ===================== GLOBAL STYLES ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html, body, .App {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+
+}
+
+
+/* ===================== NAVIGATION BAR ===================== */
+#nav {
+    height: 80px; /* Adjusted for better usability */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.6); /* Added slight background for visibility */
+    transition: background-color 0.3s ease;
+}
+
+#nav img {
+    height: 50px;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ===================== FIX WHITE SPACES ===================== */
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    overflow: hidden; /* Prevents extra scrollbar */
+}
